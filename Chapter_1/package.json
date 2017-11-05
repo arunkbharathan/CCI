@@ -1,0 +1,14 @@
+{
+  "name": "chapter_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Q1.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "AKB",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^4.0.1"
+  }
+}
