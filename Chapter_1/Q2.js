@@ -4,14 +4,25 @@ function isAllUnique(word) {
     const flagArr = []
     word = word.split('')
     for (let ch of word) {
-        if (!flagArr[ch.charCodeAt(0)]){
+        if (flagArr[ch.charCodeAt(0)] == null ){
         	flagArr[ch.charCodeAt(0)] = 1
         }else{
-        	return false
+        	flagArr[ch.charCodeAt(0)] += (flagArr[ch.charCodeAt(0)]?-1:1)
         }
     }
-    return true
+   if(word.length%2){
+
+   }else{
+   	flagArr.reduce((i,s)=>{
+   		if(i != null){
+   			return s+i
+   		}else{
+   			return s
+   		}
+   	},0)
+   }
 }
 
-
+isAllUnique('jalaja')
+isAllUnique('malayalam')
 module.exports = isAllUnique
