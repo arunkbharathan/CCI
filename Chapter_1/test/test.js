@@ -1,6 +1,7 @@
+'use strict'
 const assert = require('assert');
 const isAllUnique = require('../Q1');
-const isPalindromeMakeable = require('../Q2');
+const isPalindromeMakeable = require('../Q4');
 
 
 describe('isAllUnique', function() {

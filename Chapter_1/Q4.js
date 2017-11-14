@@ -1,5 +1,10 @@
 'use strict'
-//Implement an algorithm to determine if a string has all unique characters. What if you can not use additional data structures?
+/**
+ * Algorithm to check if a permutation of the given string can be palindrome
+ * @constructor
+ * @param {string} word - The string to check.
+ * @returns {boolean} - 'true' if the permutation of string can be palindrome.
+ */
 function isPalindromeMakeable(word) {
     const flagArr = []
     word = word.split('')
