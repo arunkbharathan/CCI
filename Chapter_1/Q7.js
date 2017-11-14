@@ -68,4 +68,4 @@ function nextPos(point = [0,0],N,move = N-1){
   }
 }
 
-console.log(nextPos([0,0],4,2))
+console.log(nextPos([0,0],3,8))
