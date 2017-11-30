@@ -114,6 +114,12 @@ const array1 = [[0,1,2],[3,4,5],[6,7,8]]
 const array2 = [[0,1,2,3],[4,5,6,7],[8,9,10,11],[12,13,14,15]]
 const array3 = [[0,1,2,3,4],[5,6,7,8,9],[10,11,12,13,14],[15,16,17,18,19],[20,21,22,23,24]]
 
+/**
+ * When rotating a 2D image this function tells where this point goes in a square ring.
+ * @constructor
+ * @param {Array} point - An N DIM square array
+ * @returns {Array} The array elements rotated by 90 degree
+ */
 function rotate90(arr){
   const DIM = arr.length
   let halfDia = Math.floor(DIM/2)
@@ -150,3 +156,5 @@ for(let i=0;i<DIM;i++){
 array.forEach(item=>console.log(item))
 console.log('\n');
 rotate90(array).forEach(item=>console.log(item))
+
+module.exports = rotate90

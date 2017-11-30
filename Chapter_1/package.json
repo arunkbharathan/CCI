@@ -12,5 +12,8 @@
     "eslint": "^4.10.0",
     "eslint-config-google": "^0.9.1",
     "mocha": "^4.0.1"
+  },
+  "dependencies": {
+    "array-equal": "^1.0.0"
   }
 }
