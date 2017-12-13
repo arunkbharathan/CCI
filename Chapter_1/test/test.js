@@ -6,6 +6,7 @@ const isPermutation = require('../Q2');
 const isPalindromeMakeable = require('../Q4');
 const isOneOrZeroEdit = require('../Q5');
 const compressIt = require('../Q6');
+const findRotation = require('../Q9');
 //const rotate90 = require('../Q7')
 
 
@@ -60,5 +61,15 @@ describe('isAllUnique', function() {
     });
     it('should return a2b1c5a3', function() {
         assert.equal(compressIt('aabcccccaaa'), 'a2b1c5a3');
+    });
+});
+
+
+describe('findRotation', function() {
+    it('should return true', function() {
+        assert.equal(findRotation('arun','naru'),true);
+    });
+    it('should return false', function() {
+        assert.equal(findRotation('maggy','magyy'), false);
     });
 });
